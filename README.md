@@ -6,7 +6,7 @@ when starting new Katas.
 
 How to get started
 ------------------
-1. Fork this repo and give it a new name appropriate for the kata.
+1. Fork this repo and give it a new name appropriate for the kata. The 'fork'-button on github only lets you create **one** fork, follow this steps if forking multiple times: [http://adrianshort.org/2011/11/08/create-multiple-forks-of-a-github-repo/](http://adrianshort.org/2011/11/08/create-multiple-forks-of-a-github-repo/)
 2. Change the name in the pom file so you get a name appropriate for the kata.
 3. Open the pom in your favorite IDE. The IDE must be able to read or import pom files...
 4. Start coding. You can use the existing Example-classes as a simple example to get started.
