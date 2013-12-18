@@ -45,7 +45,7 @@ public final class NumberConverter {
 
     public String convert(final int i) {
         if (i < 20) return below_20.get(i);
-        if (i < 100) return tens.get(i / 10);
+        if (i < 100) return tens.get(i / 10) + (i % 10 != 0 ? convert(i % 10) : "");
         return below_20.get(i);
     }
 }

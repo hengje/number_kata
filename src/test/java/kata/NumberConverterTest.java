@@ -26,5 +26,12 @@ public final class NumberConverterTest {
         assertThat(numberConverter.convert(90)).isEqualTo("nitti");
     }
 
+    @Test
+    public void tensAndOnes() {
+        assertThat(numberConverter.convert(21)).isEqualTo("tjueen");
+        assertThat(numberConverter.convert(32)).isEqualTo("trettito");
+        assertThat(numberConverter.convert(88)).isEqualTo("åttiåtte");
+        assertThat(numberConverter.convert(99)).isEqualTo("nittini");
+    }
 
 }
