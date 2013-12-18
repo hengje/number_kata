@@ -6,6 +6,7 @@ import java.util.Map;
 public final class NumberConverter {
 
     private final Map<Integer, String> below_20;
+    private final Map<Integer, String> tens;
 
     public NumberConverter() {
         this.below_20 = new HashMap<Integer, String>();
@@ -30,11 +31,21 @@ public final class NumberConverter {
         below_20.put(18, "atten");
         below_20.put(19, "nitten");
 
+        tens = new HashMap<Integer, String>();
+        tens.put(2, "tjue");
+        tens.put(3, "tretti");
+        tens.put(4, "førti");
+        tens.put(5, "femti");
+        tens.put(6, "seksti");
+        tens.put(7, "søtti");
+        tens.put(8, "åtti");
+        tens.put(9, "nitti");
 
     }
 
     public String convert(final int i) {
-
+        if (i < 20) return below_20.get(i);
+        if (i < 100) return tens.get(i / 10);
         return below_20.get(i);
     }
 }

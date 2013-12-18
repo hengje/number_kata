@@ -17,5 +17,14 @@ public final class NumberConverterTest {
         assertThat(numberConverter.convert(19)).isEqualTo("nitten");
     }
 
+    @Test
+    public void tens() {
+        assertThat(numberConverter.convert(10)).isEqualTo("ti");
+        assertThat(numberConverter.convert(20)).isEqualTo("tjue");
+        assertThat(numberConverter.convert(30)).isEqualTo("tretti");
+        assertThat(numberConverter.convert(50)).isEqualTo("femti");
+        assertThat(numberConverter.convert(90)).isEqualTo("nitti");
+    }
+
 
 }
