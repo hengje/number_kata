@@ -34,4 +34,12 @@ public final class NumberConverterTest {
         assertThat(numberConverter.convert(99)).isEqualTo("nittini");
     }
 
+    @Test
+    public void hundreds() {
+        assertThat(numberConverter.convert(100)).isEqualTo("hundre");
+        assertThat(numberConverter.convert(200)).isEqualTo("tohundre");
+        assertThat(numberConverter.convert(300)).isEqualTo("trehundre");
+        assertThat(numberConverter.convert(900)).isEqualTo("nihundre");
+    }
+
 }
